@@ -170,3 +170,60 @@ if (carWashForm) {
     );
 
 }
+/* =========================
+   TABLE RESERVATION
+========================= */
+
+const reservationForm =
+    document.getElementById("reservationForm");
+
+
+if (reservationForm) {
+
+    reservationForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById(
+                    "reservationName"
+                ).value;
+
+
+            const date =
+                document.getElementById(
+                    "reservationDate"
+                ).value;
+
+
+            const time =
+                document.getElementById(
+                    "reservationTime"
+                ).value;
+
+
+            const guests =
+                document.getElementById(
+                    "guests"
+                ).value;
+
+
+            alert(
+                "Reservation Confirmed! 🍽️\n\n" +
+
+                "Name: " + name + "\n" +
+
+                "Date: " + date + "\n" +
+
+                "Time: " + time + "\n" +
+
+                "Guests: " + guests
+            );
+
+        }
+    );
+
+}
