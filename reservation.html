@@ -1,1 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GRAND LAHDA | Reservations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍽️ GRAND LAHDA
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="menu.html">
+                    Menu
+                </a>
+            </li>
+
+            <li>
+                <a href="reservation.html" class="active">
+                    Reservations
+                </a>
+            </li>
+
+            <li>
+                <a href="carwash.html">
+                    Car Wash 🚗
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     PAGE HEADER
+========================= -->
+
+<section class="reservation-header">
+
+    <p>GRAND LAHDA</p>
+
+    <h1>Reserve Your Table</h1>
+
+    <span>
+        Make your next dining experience special.
+    </span>
+
+</section>
+
+
+<!-- =========================
+     RESERVATION
+========================= -->
+
+<section class="reservation-section">
+
+    <div class="reservation-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="reservation-info">
+
+            <p class="small-title">
+                TABLE RESERVATION
+            </p>
+
+            <h2>
+                We'd Love To Have You
+            </h2>
+
+            <p>
+                Planning a family dinner, date night or
+                special celebration? Reserve your table
+                at GRAND LAHDA and enjoy a memorable
+                dining experience.
+            </p>
+
+
+            <div class="reservation-detail">
+
+                <span>🕐</span>
+
+                <div>
+
+                    <h3>Opening Hours</h3>
+
+                    <p>
+                        Monday - Sunday
+                    </p>
+
+                    <p>
+                        08:00 - 22:00
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reservation-detail">
+
+                <span>👥</span>
+
+                <div>
+
+                    <h3>Groups Welcome</h3>
+
+                    <p>
+                        We welcome small and large groups.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reservation-detail">
+
+                <span>🍽️</span>
+
+                <div>
+
+                    <h3>Great Dining</h3>
+
+                    <p>
+                        Enjoy freshly prepared meals
+                        in a welcoming environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="reservation-card">
+
+            <h2>
+                Book a Table
+            </h2>
+
+            <p class="booking-subtitle">
+                Complete your reservation details.
+            </p>
+
+
+            <form id="reservationForm">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="reservationName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="reservationName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="reservationPhone">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="reservationPhone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DATE -->
+
+                <div class="form-group">
+
+                    <label for="reservationDate">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="reservationDate"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TIME -->
+
+                <div class="form-group">
+
+                    <label for="reservationTime">
+                        Time
+                    </label>
+
+                    <select
+                        id="reservationTime"
+                        required
+                    >
+
+                        <option value="">
+                            Select a time
+                        </option>
+
+                        <option value="08:00">
+                            08:00
+                        </option>
+
+                        <option value="09:00">
+                            09:00
+                        </option>
+
+                        <option value="10:00">
+                            10:00
+                        </option>
+
+                        <option value="11:00">
+                            11:00
+                        </option>
+
+                        <option value="12:00">
+                            12:00
+                        </option>
+
+                        <option value="13:00">
+                            13:00
+                        </option>
+
+                        <option value="14:00">
+                            14:00
+                        </option>
+
+                        <option value="15:00">
+                            15:00
+                        </option>
+
+                        <option value="16:00">
+                            16:00
+                        </option>
+
+                        <option value="17:00">
+                            17:00
+                        </option>
+
+                        <option value="18:00">
+                            18:00
+                        </option>
+
+                        <option value="19:00">
+                            19:00
+                        </option>
+
+                        <option value="20:00">
+                            20:00
+                        </option>
+
+                        <option value="21:00">
+                            21:00
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- GUESTS -->
+
+                <div class="form-group">
+
+                    <label for="guests">
+                        Number of Guests
+                    </label>
+
+                    <select id="guests" required>
+
+                        <option value="">
+                            Select number of guests
+                        </option>
+
+                        <option value="1">
+                            1 Guest
+                        </option>
+
+                        <option value="2">
+                            2 Guests
+                        </option>
+
+                        <option value="3">
+                            3 Guests
+                        </option>
+
+                        <option value="4">
+                            4 Guests
+                        </option>
+
+                        <option value="5">
+                            5 Guests
+                        </option>
+
+                        <option value="6">
+                            6 Guests
+                        </option>
+
+                        <option value="7">
+                            7 Guests
+                        </option>
+
+                        <option value="8">
+                            8 Guests
+                        </option>
+
+                        <option value="9">
+                            9 Guests
+                        </option>
+
+                        <option value="10">
+                            10 Guests
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- OCCASION -->
+
+                <div class="form-group">
+
+                    <label for="occasion">
+                        Occasion
+                    </label>
+
+                    <select id="occasion">
+
+                        <option value="">
+                            Select occasion
+                        </option>
+
+                        <option value="Birthday">
+                            Birthday
+                        </option>
+
+                        <option value="Anniversary">
+                            Anniversary
+                        </option>
+
+                        <option value="Date">
+                            Date
+                        </option>
+
+                        <option value="Family">
+                            Family Gathering
+                        </option>
+
+                        <option value="Business">
+                            Business Meal
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SPECIAL REQUEST -->
+
+                <div class="form-group">
+
+                    <label for="reservationMessage">
+                        Special Request
+                    </label>
+
+                    <textarea
+                        id="reservationMessage"
+                        rows="4"
+                        placeholder="Any special requests?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="booking-btn">
+
+                    Confirm Reservation 🍽️
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>
+            🍽️ GRAND LAHDA
+        </h3>
+
+        <p>
+            Great food. Great service. Great experiences.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservation.html">
+                Reservations
+            </a>
+
+            <a href="carwash.html">
+                Car Wash
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 GRAND LAHDA. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
