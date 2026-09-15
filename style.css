@@ -334,6 +334,213 @@ footer {
         font-size: 30px;
     }
 
+/* =========================
+   MENU PAGE
+========================= */
+
+.page-header {
+    background: #2d241f;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.page-header p {
+    color: #d9a441;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.page-header h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.page-header span {
+    color: #d4cbc4;
+}
+
+
+/* MENU SECTION */
+
+.menu-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+
+/* CATEGORIES */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.categories button {
+    border: 1px solid #d9a441;
+    background: transparent;
+    color: #2d241f;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.categories button:hover {
+    background: #d9a441;
+}
+
+
+/* MENU GRID */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* MENU CARD */
+
+.menu-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* FOOD IMAGE */
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+/* MENU INFORMATION */
+
+.menu-info {
+    padding: 22px;
+}
+
+.category {
+    color: #d9a441;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.menu-info h3 {
+    font-size: 22px;
+
+    margin: 8px 0;
+}
+
+.menu-info p {
+    color: #6d625c;
+
+    font-size: 14px;
+
+    min-height: 48px;
+}
+
+
+/* PRICE + BUTTON */
+
+.menu-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.menu-bottom strong {
+    font-size: 21px;
+
+    color: #2d241f;
+}
+
+.add-btn {
+    border: none;
+
+    background: #2d241f;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #d9a441;
+
+    color: #2d241f;
+}
+
+
+/* MOBILE MENU */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+}
+   
+
     .cta h2 {
         font-size: 28px;
     }
