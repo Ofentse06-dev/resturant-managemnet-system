@@ -1,1 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Ofentse Restaurant | Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🍽️ Ofentse Restaurant
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- MENU HEADER -->
+
+<section class="page-header">
+
+    <p>OUR MENU</p>
+
+    <h1>Delicious Food, Made For You</h1>
+
+    <span>
+        Explore our selection of freshly prepared meals.
+    </span>
+
+</section>
+
+
+<!-- CATEGORY BUTTONS -->
+
+<section class="menu-section">
+
+    <div class="categories">
+
+        <button onclick="filterMenu('all')">All</button>
+
+        <button onclick="filterMenu('breakfast')">
+            Breakfast
+        </button>
+
+        <button onclick="filterMenu('lunch')">
+            Lunch
+        </button>
+
+        <button onclick="filterMenu('dinner')">
+            Dinner
+        </button>
+
+        <button onclick="filterMenu('drinks')">
+            Drinks
+        </button>
+
+    </div>
+
+
+    <!-- MENU ITEMS -->
+
+    <div class="menu-grid">
+
+
+        <!-- ITEM 1 -->
+
+        <div class="menu-card" data-category="breakfast">
+
+            <img
+                src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
+                alt="Breakfast">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Breakfast
+                </span>
+
+                <h3>Full Breakfast</h3>
+
+                <p>
+                    Eggs, bacon, sausage, toast, tomatoes
+                    and mushrooms.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R65</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Full Breakfast', 65)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 2 -->
+
+        <div class="menu-card" data-category="breakfast">
+
+            <img
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+                alt="Eggs">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Breakfast
+                </span>
+
+                <h3>Eggs & Toast</h3>
+
+                <p>
+                    Fresh eggs served with crispy toast.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R45</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Eggs & Toast', 45)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 3 -->
+
+        <div class="menu-card" data-category="lunch">
+
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Chicken">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Lunch
+                </span>
+
+                <h3>Grilled Chicken</h3>
+
+                <p>
+                    Tender grilled chicken served with
+                    delicious sides.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R85</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Grilled Chicken', 85)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 4 -->
+
+        <div class="menu-card" data-category="lunch">
+
+            <img
+                src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80"
+                alt="Beef">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Lunch
+                </span>
+
+                <h3>Beef Stew</h3>
+
+                <p>
+                    Slow-cooked beef stew served with
+                    a choice of sides.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R90</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Beef Stew', 90)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 5 -->
+
+        <div class="menu-card" data-category="dinner">
+
+            <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                alt="Steak">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Dinner
+                </span>
+
+                <h3>Oxtail </h3>
+
+                <p>
+                    Juicy, browned oxtail served with pap,dumpling or rice with a side of vegs.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R100</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Oxtail', 100)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 6 -->
+
+        <div class="menu-card" data-category="dinner">
+
+            <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+                alt="Burger">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Dinner
+                </span>
+
+                <h3>Classic Burger</h3>
+
+                <p>
+                    Homemade beef burger with lettuce,
+                    tomato and cheese.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R75</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Classic Burger', 75)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 7 -->
+
+        <div class="menu-card" data-category="drinks">
+
+            <img
+                src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+                alt="Juice">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Drinks
+                </span>
+
+                <h3>Fresh Juice</h3>
+
+                <p>
+                    Refreshing freshly prepared fruit juice.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R30</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Fresh Juice', 30)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 8 -->
+
+        <div class="menu-card" data-category="drinks">
+
+            <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+                alt="Coffee">
+
+            <div class="menu-info">
+
+                <span class="category">
+                    Drinks
+                </span>
+
+                <h3>Fresh Coffee</h3>
+
+                <p>
+                    Freshly brewed coffee served hot.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <strong>R25</strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Fresh Coffee', 25)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>🍽️ GRAND LAHDA</h3>
+
+        <p>
+            GOOD FOOD. GOOD VIBES.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+
+            <a href="reservation.html">
+                Reservations
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 GRAND LAHDA RESTURANT. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
